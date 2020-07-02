@@ -80,7 +80,7 @@ Toolkit.run(async tools => {
   try {
     const { data: openIssues } = await tools.github.issues.listForRepo({
       ...tools.context.repo,
-      creator: 'github-actions[bot]',
+      labels: listToArray(attributes.labels).join(","),
       state: 'open'
     });
     tools.log.info(openIssues);
