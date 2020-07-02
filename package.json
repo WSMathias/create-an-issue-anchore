@@ -1,0 +1,38 @@
+{
+  "name": "create-an-issue",
+  "private": true,
+  "main": "index.js",
+  "scripts": {
+    "test": "jest --coverage && standard"
+  },
+  "keywords": [],
+  "author": "Jason Etcovitch <jasonetco@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@actions/core": "^1.2.3",
+    "@actions/github": "^4.0.0",
+    "actions-toolkit": "^4.0.0",
+    "btoa": "^1.2.1",
+    "front-matter": "^3.1.0",
+    "glob": "^7.1.6",
+    "js-yaml": "^3.13.1",
+    "markdown-table": "^2.0.0",
+    "nunjucks": "^3.2.1",
+    "nunjucks-date-filter": "^0.1.1"
+  },
+  "devDependencies": {
+    "jest": "^25.2.7",
+    "nock": "^12.0.3",
+    "standard": "^14.3.3"
+  },
+  "standard": {
+    "env": [
+      "jest"
+    ]
+  },
+  "jest": {
+    "setupFiles": [
+      "<rootDir>/tests/setup.js"
+    ]
+  }
+}
