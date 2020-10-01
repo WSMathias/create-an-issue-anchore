@@ -9,7 +9,7 @@
   "author": "Jason Etcovitch <jasonetco@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "@actions/core": "^1.2.3",
+    "@actions/core": "^1.2.6",
     "@actions/github": "^4.0.0",
     "actions-toolkit": "^4.0.0",
     "btoa": "^1.2.1",
